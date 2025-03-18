@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<head>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<link rel="stylesheet" href=
+"https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+	<title>Weather App</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="weather-card">
+			
+			<h2 style="color: rgb(5, 51, 5);">
+				Weather App
+			</h2>
+			<input type="text" id="city-input"
+				placeholder="Enter city name">
+			<button id="city-input-btn"
+					onclick="weatherFn($('#city-input').val())">
+					Get Weather
+			</button>
+			<div id="weather-info"
+				class="animate__animated animate__fadeIn">
+				<h3 id="city-name"></h3>
+				<p id="date"></p>
+				<i class='fas fa-cloud-sun-rain'
+                 style='font-size:48px;color:rgba(27, 237, 213, 0.545)'></i>
+				<p id="temperature"></p>
+				<p id="description"></p>
+				<p id="wind-speed"></p>
+
+				<div class="weather-stats">
+					<div class="stat-box">
+						<p id="temperature"></p>
+						<small>Temperature</small>
+					</div>
+					<div class="stat-box">
+						<p id="wind-speed"></p>
+						<small>Wind Speed</small>
+					</div>
+				</div>
+				<p id="description" class="description-box"></p>
+			</div>
+			
+			</div>
+		</div>
+	</div>
+	<script src=
+"https://code.jquery.com/jquery-3.6.0.min.js">
+	</script>
+	<script src=
+"https://momentjs.com/downloads/moment.min.js">
+	</script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
