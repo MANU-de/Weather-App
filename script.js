@@ -21,7 +21,6 @@ async function weatherFn(cName) {
 	} catch (error) {
 		console.error('Error fetching weather data:', error);
 	}
-
 	$('#temperature').html(
         `<span class="temperature-gradient">${data.main.temp}°C</span>`
     );
@@ -29,8 +28,8 @@ async function weatherFn(cName) {
         `https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`
     );
 }
-function weatherShowFn(data) {
-}
+
+
 
 function weatherShowFn(data) {
 	$('#city-name').text(data.name);
